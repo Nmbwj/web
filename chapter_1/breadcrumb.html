@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> navigation with breadcrumb</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .breadcrumb {
+                display: flex;
+                list-style: none;
+            }
+            .breadcrumb li{
+                padding: 10px;
+            }
+            .breadcrumb li::after{
+                content: '/';
+                margin-left: 20px;
+            }
+            .breadcrumb li:last-child:after {
+                content: '';
+            }
+            .breadcrumb a {
+                color: black;
+                text-decoration: none;
+            }
+            .breadcrumb a:hover {
+                text-decoration: underline;
+            }
+            .intro {
+                margin: 30px 10px;
+                padding-left: 10px;
+                width: 50%;
+            }
+            .intro h1 {
+                margin-bottom: 15px;
+            }
+            .intro p{
+                line-height: 1.5;
+            }
+            .product-card {
+                display: inline-block;
+                border: 1px solid black;
+                padding: 15px;
+            }
+            .product-card img {
+                width: 100%;
+            }
+            .product-card h2{
+                margin: 30px 0 15px;
+            }
+            .product-card a {
+                color: black;
+                text-decoration: none;
+            }
+            .product-card p {
+                line-height: 1.5;
+            }
+            .orginal-price{
+                color: gray;
+                text-transform: uppercase;
+            }
+            .current-price span {
+                font-weight: bold;
+                text-decoration: underline;
+            }
+            .saving {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ol class = "breadcrumb">
+                <li><a href="">Home</a></li>
+                <li><a href="">Used DVDs</a></li>
+                <li>Less than $10</li>            
+            </ol>
+        </nav>
+        <section class="intro">
+            <h1>Video less than $10</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum non purus
+quis vestibulum. Pellentesque ultricies quam lacus, ut tristique sapien tristique
+et.
+            </p>
+            <div class="product-card">
+                <img src="https://dummyimage.com/300x300/7EC0EE/000&text=Product+Image+1" alt="Product image 1">
+                <h2> <a href="">Video title 1</a></h2>
+                <p class="orginal-price">RRP: $18.99</p>
+                <p class="current-price">Price you pay<span>$9.99</span></p>
+                <p class="saving">Your saving $9</p>
+
+            </div>
+        </section>
+
+    </body>
+</html>
