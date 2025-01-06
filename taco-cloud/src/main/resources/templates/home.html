@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en"
+		xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <title>Real News recommendation 'RT'</title>
+        <link rel="stylesheet" th:href="@{/styles/news.css}" />
+
+    </head>
+    <body>
+        <header>
+            <img src="https://dummyimage.com/200x100/000/fff&text=Logo" alt="RT LOGO">
+            <nav>
+                <ul>
+                    <li><a href="https://www.rt.com/">RT News</a></li>
+                    <li><a href="https://doc.rt.com/">RT Documentarty</a></li>   
+                    <li><a href="https://www.rt.com/on-air/rumble/">RT Live</a></li>
+                    <li><a href="https://rutube.ru/">Rutube</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <section>
+            <ol class="breadcrumb">
+                <li><a href="">Home</a></li>
+                <li><a href="">Show</a></li>
+                <li>Inside</li>     
+
+            </ol>
+
+        </section>
+        <section class="intro">
+            <h1>News Original</h1>
+            <p>
+                This is an Advert of the best News agency I have ever seen. They interpret news nuetrally and accommudate facts on time.
+                Its very important to listen to the facts, instead of once assumption. Please take review
+            </p>
+                   
+        </section>
+        <section class="product-cards">
+            <div class="product-card">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.eIbW_OYr0nci3zuGEHSukgHaE8%26pid%3DApi&f=1&ipt=043f6eaa78e89f55c404ee55e32ed793c5ee669028644fe014ddc829acd4376f&ipo=images" alt="RT">
+                <h2><h2><a href="">Story of My Homeland</a></h2>
+                <p class="editor">editor(Caution this is an example not real): Naol</p>
+                <p class="timehour">Time:<span>1:17</span>hr long</p>
+                <p class="validation">Validated</p>
+            </div>
+            <div class="product-card">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.eIbW_OYr0nci3zuGEHSukgHaE8%26pid%3DApi&f=1&ipt=043f6eaa78e89f55c404ee55e32ed793c5ee669028644fe014ddc829acd4376f&ipo=images" alt="RT">
+                <h2><h2><a href="">Winnter Season</a></h2>
+                <p class="editor">editor(Caution this is an example not real): Samuel</p>
+                <p class="timehour">Time:<span>2:23</span>hr long</p>
+                <p class="validation">Validated</p>
+            </div>
+            <div class="product-card">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.eIbW_OYr0nci3zuGEHSukgHaE8%26pid%3DApi&f=1&ipt=043f6eaa78e89f55c404ee55e32ed793c5ee669028644fe014ddc829acd4376f&ipo=images" alt="RT">
+                <h2><h2><a href="">Family Culture</a></h2>
+                <p class="editor">editor(Caution this is an example not real): Samuel</p>
+                <p class="timehour">Time:<span>1:43</span>hr long</p>
+                <p class="validation">Validated</p>
+            </div>
+            <div class="product-card">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.eIbW_OYr0nci3zuGEHSukgHaE8%26pid%3DApi&f=1&ipt=043f6eaa78e89f55c404ee55e32ed793c5ee669028644fe014ddc829acd4376f&ipo=images" alt="RT">
+                <h2><a href="">Holiday</a></h2>
+                <p class="editor">editor(Caution this is an example not real): Naol</p>
+                <p class="timehour">Time:<span>3:43</span>hr long</p>
+                <p class="validation">Validated </p>
+            </div>
+        </section>
+        <form action="https://www.postb.in/1735806018268-6504453867673" method ="post">
+
+            <fieldset class="feildset">
+                <!-- Our form go-->
+                 <div class="select-wraper">
+                    <label for="title" class="label-wraper">Titile <span>*</span></label><br />
+                    <select id="title" required>
+                        <option value="comment">Comment</option>
+                        <option value="reply">Reply</option>
+                        <option value="report">Report</option>
+
+                    </select>
+                 </div>
+                 <div class="form-wraper">
+                    <label for="user" class="label-wraper">user <span>*</span></label><br />
+                    <input type="text" name="user" id="user" placeholder="username" required>
+                 </div>
+                 <div class="form-wraper">
+                    <label for="message" class="label-wraper">Message</label><br />
+                    <textarea id="message" rows="5" cols="20" placeholder="Your message"></textarea>
+                 </div>
+                 <button type="submit">Submit</button>
+            </fieldset>
+
+        </form>
+
+    </body>
+</html>
