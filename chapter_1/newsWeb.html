@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Real News recommendation 'RT'</title>
-        <base href="/chapter_1/styles/">
-        <link rel="stylesheet" href="news.css">
+        <base href="/chapter_1/">
+        <link rel="stylesheet" href="styles/news.css">
 
     </head>
     <body>
@@ -16,14 +16,15 @@
                     <li><a href="https://doc.rt.com/">RT Documentarty</a></li>   
                     <li><a href="https://www.rt.com/on-air/rumble/">RT Live</a></li>
                     <li><a href="https://rutube.ru/">Rutube</a></li>
+                    <li  class="SignIn"><a href="signin.html">SignIn</a></li>
                 </ul>
             </nav>
 
         </header>
         <section>
             <ol class="breadcrumb">
-                <li><a href="">Home</a></li>
-                <li><a href="">Show</a></li>
+                <li><a href="newsWeb.html">Home</a></li>
+                <li><a href="newsWeb.html">Show</a></li>
                 <li>Inside</li>     
 
             </ol>
@@ -67,26 +68,26 @@
                 <p class="validation">Validated </p>
             </div>
         </section>
-        <form action="https://www.postb.in/1735806018268-6504453867673" method ="post">
+        <form action="https://www.postb.in/1735852962075-9555156282149" method ="post">
 
             <fieldset class="feildset">
                 <!-- Our form go-->
                  <div class="select-wraper">
                     <label for="title" class="label-wraper">Titile <span>*</span></label><br />
-                    <select id="title" required>
+                    <select name="InputType" id="title" required>
                         <option value="comment">Comment</option>
                         <option value="reply">Reply</option>
                         <option value="report">Report</option>
 
                     </select>
                  </div>
-                 <div class="form-wraper">
+                 <div >
                     <label for="user" class="label-wraper">user <span>*</span></label><br />
                     <input type="text" name="user" id="user" placeholder="username" required>
                  </div>
-                 <div class="form-wraper">
+                 <div>
                     <label for="message" class="label-wraper">Message</label><br />
-                    <textarea id="message" rows="5" cols="20" placeholder="Your message"></textarea>
+                    <textarea name="message" id="message" rows="5" cols="20" placeholder="Your message"></textarea>
                  </div>
                  <button type="submit">Submit</button>
             </fieldset>

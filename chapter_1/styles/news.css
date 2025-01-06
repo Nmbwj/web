@@ -28,6 +28,7 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
 .breadcrumb {
     display: flex;
     list-style: none;
@@ -105,7 +106,7 @@ nav a:hover {
 .label-wraper{
     font-size: 20px;
 }
-.form-wraper{
+fieldset>div {
     margin-bottom: 20px;
 }
 input, textarea {
@@ -140,7 +141,7 @@ select {
     width: 200px;
     -webkit-appearance: none;
 }
-.select-wraper{
+fieldset>div.select-wraper{
     margin-bottom: 20px;
     position: relative;
     width: 200px;
