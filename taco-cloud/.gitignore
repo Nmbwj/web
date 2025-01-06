@@ -1,7 +1,3 @@
-/.metadata/
-/taco-cloud/.mvn/
-/taco-cloud/target/
-/taco-cloud/.settings/
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
@@ -35,4 +31,3 @@ build/
 
 ### VS Code ###
 .vscode/
-
