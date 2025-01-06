@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+    margin: 0 auto;
+    width: 1200px;
+}
+header {
+    align-items: center;
+    display: flex;
+    margin-bottom: 25px;
+}
+nav {
+    margin-left: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav a {
+    color: black;
+    padding: 15px;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.breadcrumb {
+    display: flex;
+    list-style: none;
+}
+.breadcrumb li{
+    padding: 10px;
+}
+.breadcrumb li::after{
+    content: '/';
+    margin-left: 20px;
+}
+.breadcrumb li:last-child:after {
+    content: '';
+}
+.breadcrumb a {
+    color: black;
+    text-decoration: none;
+}
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+.intro {
+    margin: 30px 10px;
+    padding-left: 10px;
+    width: 50%;
+}
+.intro h1 {
+    margin-bottom: 15px;
+}
+.intro p{
+    line-height: 1.5;
+}
+.product-cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 30px;
+}
+.product-card {
+    display: inline-block;
+    padding: 15px;
+}
+.product-card img {
+    width: 100%;
+}
+.product-card h2{
+    margin: 30px 0 15px;
+}
+.product-card a {
+    color: black;
+    text-decoration: none;
+}
+.product-card p {
+    line-height: 1.5;
+}
+.editor{
+    color: gray;
+    text-transform: uppercase;
+}
+.timehour span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.validation {
+    color: green;
+}
+.feildset{
+    font-family: arial, sans-serif;
+    border: 0;
+    padding: 30px;
+    width: 40%;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    
+}
+.label-wraper{
+    font-size: 20px;
+}
+.form-wraper{
+    margin-bottom: 20px;
+}
+input, textarea {
+    border: 0;
+    border-bottom: 1px solid green;
+    padding: 10px 0;
+    width: 200px;
+}
+input:valid, textarea:valid {
+    border-bottom-color: green;
+}
+input:invalid, textarea:invalid{
+    border-bottom-color: red;
+}
+button {
+    background: green;
+    border: 0;
+    color: white;
+    font-size: 12px;
+    height: 50px;
+    width: 200px;
+    text-transform: uppercase;
+}
+select {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid green;
+    box-shadow: none;
+    color: #666;
+    padding: 10px 0;
+    width: 200px;
+    -webkit-appearance: none;
+}
+.select-wraper{
+    margin-bottom: 20px;
+    position: relative;
+    width: 200px;
+}
+label span{
+    color: red;
+}
