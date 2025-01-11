@@ -1,0 +1,29 @@
+body {
+    font-family: arial, sans-serif;
+
+}
+
+fieldset{
+    border: 0;
+    padding: 0;
+}
+
+fieldset > div {
+    margin-bottom: 30px;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+label span{
+    color:red;
+}
+
+.checkbox input {
+    float: left;
+    width: auto;
+    margin-right: 10px;
+
+}
