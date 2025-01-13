@@ -1,58 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-    <!--
-    xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:th="http://www.thymeleaf.org"
-    -->
+<html lang="en"
+	xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org">
+    
+    
     <head>
         <meta charset="utf-8">
         <title>Taco Cloud</title>
-        <link rel="stylesheet" href="styles/design.css">
+        <link rel="stylesheet" th:href="@{/styles/design.css}" /
     </head>
     <body>
         <h1>Design your Taco</h1>
-        <form action="" method="post">
+        <form method="POST" th:object="${taco}">
             <fieldset>
                 <div class="double-input">
                     <div>
                         <h3>Design your wrap</h3>
-                        <div class="checkbox">
-                            <input type="checkbox" name="ingredients" id="wrap" value="FLTO">
-                            <label for="wrap"> INGREDIENTS</label>
+                        <div class="checkbox" th:each="ingredient : ${wrap}">
+                            <input type="checkbox" th:field="*{ingredients}" th:value="${ingredient.id}" th:id="${ingredient.id}" />
+                            <label th:for="${ingredient.id}" th:text="${ingredient.name}"> INGREDIENTS</label>
                         </div>
                     </div>
 
                     <div>
                         <h3>Design your Protiens</h3>
-                        <div class="checkbox">
-                            <input type="checkbox" name="ingredients" id="protiens" value="PLTO">
-                            <label for="protiens"> INGREDIENTS</label>
+                        <div class="checkbox" th:each="ingredient : ${protein}">
+                            <input type="checkbox" th:field="*{ingredients}" th:value="${ingredient.id}" th:id="${ingredient.id}" />
+                            <label th:for="${ingredient.id}" th:text="${ingredient.name}"> INGREDIENTS</label>
                         </div>
                     </div>
                 </div>
                 <div class="double-input"> 
                     <div>
                         <h3>Design your Cheeses</h3>
-                        <div class="checkbox">
-                            <input type="checkbox" name="ingredients" id="cheeses" value="CLTO">
-                            <label for="cheeses"> INGREDIENTS</label>
+                        <div class="checkbox" th:each="ingredient : ${cheese}">
+                            <input type="checkbox" th:field="*{ingredients}" th:value="${ingredient.id}" th:id="${ingredient.id}" />
+                            <label th:for="${ingredient.id}" th:text="${ingredient.name}"> INGREDIENTS</label>
                         </div>
                     </div>
 
                 
                     <div>
                         <h3>Design your Veggies</h3>
-                        <div class="checkbox">
-                            <input type="checkbox" name="ingredients" id="veggies" value="VLTO">
-                            <label for="veggies"> INGREDIENTS</label>
+                        <div class="checkbox" th:each="ingredient : ${veggies}">
+                            <input type="checkbox" th:field="*{ingredients}" th:value="${ingredient.id}" th:id="${ingredient.id}" />
+                            <label th:for="${ingredient.id}" th:text="${ingredient.name}"> INGREDIENTS</label>
                         </div>
                     </div>
                 </div>
                 <div>
                     <h3>Design your Sauces</h3>
-                    <div class="checkbox">
-                        <input type="checkbox" name="ingredients" id="sauces" value="SLTO">
-                        <label for="sauces"> INGREDIENTS</label>
+                    <div class="checkbox" th:each="ingredient : ${sauce}">
+                        <input type="checkbox" th:field="*{ingredients}" th:value="${ingredient.id}" th:id="${ingredient.id}" />
+                        <label th:for="${ingredient.id}" th:text="${ingredient.name}"> INGREDIENTS</label>
                     </div>
                 </div>
 
