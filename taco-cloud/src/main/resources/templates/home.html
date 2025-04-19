@@ -5,8 +5,17 @@
     <head>
         <meta charset="utf-8">
         <title>Real News recommendation 'RT'</title>
-        <link rel="stylesheet" th:href="@{/styles/news.css}" />
-
+        <!--
+        This is the orginal css location with spring boot th
+		<link rel="stylesheet" th:href="@{/styles/news.css}" />
+        --> 
+        <!--
+        This is for debugging, when trying responsiveness
+        -->
+        <link rel ="stylesheet" media="screen and (min-width: 1281px)" href="../static/styles/news.css"/>
+        <link rel ="stylesheet" media="screen and (max-width:915px)" href="../static/styles/mobile.css"/>
+        <link rel="stylesheet" media="screen and (min-width:916px) and (max-width: 1280px)" href="../static/styles/tablet.css"/>
+ 
     </head>
     <body>
         <header>
